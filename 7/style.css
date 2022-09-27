@@ -11,7 +11,8 @@ a {
 }
 
 h1  {
-    margin: 0;
+    margin: 0 auto;
+    padding: 0;
 }
 
 li {
@@ -28,33 +29,34 @@ header {
 }
 
 header img {
-    padding-right: 80px;
+    padding-right: 10%;
     width: 130px; 
-    float: left;
-    margin-top: -35px;
 }
 
 .header_wrapper {
+    display: flex;
     max-width: 960px;
+    align-items: center;
     margin: 0 auto;
+    padding: 10px;
 }
 
-#logo_text {
-    margin-top: 50px;
-} 
 
 .content
 {
-    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     background-color: rgb(233, 228, 253);
-    margin: 0 auto;
     padding-bottom: 50px;
 }
 
 .content nav {
-    text-align: center;
-    height: 40px;
-    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
     background-color: #a6acf0;
     border-bottom: 2px solid rgb(196, 185, 204);
 }
@@ -62,24 +64,33 @@ header img {
 .content nav a {
     font-size: 20px;
     font-weight: 600;
+    display: block;
+}
+
+.content h1 {
+    text-align: center;
 }
 
 .title {
-    text-align: center;
-    margin: 50px 0 30px 0 ;
+    margin: 50px auto 30px auto ;
 }
 
 .links {
-    width: 52%;
     margin: 0 auto 0 auto;
+}
+
+img {
+    width: 100%;
 }
 
 .form {
     margin: 0 auto;
-    width: 30%;
     margin: 50px auto 0 auto;
 }
 
+.table {
+    order: 1;
+}
 table {
     border: 1px solid grey;
     border-collapse: collapse;
@@ -164,4 +175,21 @@ footer {
 }
 
 
-
+@media (min-width: 768px) 
+{
+    .content 
+    {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .content nav 
+    {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .table {
+        order: 0;
+    }
+    
+    
+}
