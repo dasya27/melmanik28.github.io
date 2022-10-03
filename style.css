@@ -1,18 +1,20 @@
 body {
     margin: 0;
     box-sizing: border-box;
-    background-color: #000;
+    background-color: #92abb7;
     font-size: 18px;
     padding: 0;
+    font-family: Calibri, sans-serif;
+    color:#1D2D44;
 }
 
 a {
     text-decoration: none;
+    color:#1D2D44;
 }
 
 h1  {
-    margin: 0 auto;
-    padding: 0;
+    margin: 0;
 }
 
 li {
@@ -23,80 +25,98 @@ li {
 header {
     width: 100%;
     height: 150px;
-    background-color: green;
+    background-color: #1D2D44;
     margin: 0;
     overflow: auto;
 }
 
 header img {
-    padding-right: 10%;
-    width: 130px; 
+    padding-right: 50px;
+    width: 100px; 
+    float: left;
+    margin-top: 15px;
+}
+
+#logo_text
+{
+    color: white;
 }
 
 .header_wrapper {
-    display: flex;
     max-width: 960px;
-    align-items: center;
     margin: 0 auto;
-    padding: 10px;
+    padding: 7px 20px;
 }
 
+#logo_text {
+    margin-top: 50px;
+} 
 
 .content
 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: rgb(233, 228, 253);
-    padding-bottom: 50px;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .content nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0 10px 0;
-    background-color: #a6acf0;
-    border-bottom: 2px solid rgb(196, 185, 204);
+    margin-top: 10px;
+    border: 2px solid #2c1d42;
+    text-align: center;
+    height: 40px;
+    padding: 15px 0 0 0;
+    background-color: #40456d;
 }
 
 .content nav a {
     font-size: 20px;
-    font-weight: 600;
-    display: block;
+    font-weight: 400;
+    color: white;
 }
 
-.content h1 {
-    text-align: center;
+.links a:hover {
+    color:#07040b;
 }
 
+.content nav a:hover {
+    color:rgb(62, 206, 62);
+}
 .title {
-    margin: 50px auto 30px auto ;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #40456d;
 }
 
 .links {
-    margin: 0 auto 0 auto;
-}
-
-img {
-    width: 100%;
+    margin: 10px auto 0 auto;
+    padding: 30px 20px;
+    border: 2px solid #2c1d42;
+    background-color:rgb(233, 236, 243);
 }
 
 .form {
-    margin: 0 auto;
-    margin: 50px auto 0 auto;
+    margin: 15px auto 0 auto;
+    padding: 30px 50px;
+    background-color:rgb(233, 236, 243);
+    border: 2px solid #2c1d42;
+}
+
+form {
+    text-align: center;
 }
 
 .table {
-    order: 1;
+    margin: 15px auto 0 auto;
+    padding: 30px 50px;
+    background-color:rgb(233, 236, 243);
+    border: 2px solid #2c1d42;
 }
+
 table {
     border: 1px solid grey;
     border-collapse: collapse;
     margin: 0 auto;
     text-align: center;
-    width: 77%;
+    width:90%;
 }
 
 th {
@@ -106,25 +126,27 @@ th {
 
 tr {
     border: 1px solid grey;
+
 }
 
 .food {
     width: 50%;
-    background-color: rgb(210, 153, 240);
+    background-color: #7b82b4;
 }
 
 .num {
     width: 6%;
-    background-color: rgb(210, 153, 240);
+    background-color: #7b82b4;
 }
 
 .anim {
     width: 13%;
-    background-color: rgb(210, 153, 240);
+    background-color: #7b82b4;
 }
 
 .live {
-    background-color: rgb(210, 153, 240);
+    width: 31%;
+    background-color: #7b82b4;
 }
 
 td {
@@ -132,7 +154,7 @@ td {
 }
 
 tbody tr:nth-child(odd) {
-    background-color: rgb(168, 250, 209);
+    background-color: rgb(190, 194, 246);
 }
 
 tfoot {
@@ -143,51 +165,43 @@ input {
     margin-left: 20px;
 }
 
+.name {
+    margin-left: 32px;
+}
+
+.name, .mail {
+    width:250px;
+    height: 30px;
+    border-radius: 3px;
+    border: 2px solid grey;
+}
+
 button {
     display: block;
     margin: 0 auto;
-    border: 2px solid rgb(136, 123, 137);
+    border: 1px solid rgb(83, 68, 83);
     border-radius: 4px;
     cursor: pointer;
-    background-color: rgb(231, 165, 255); 
-    width: 150px; 
-    height: 30px;
-}
-
-
-.name  {
-    background-color: rgb(192, 219, 254); 
-    height: 22px;
-}
-
-.mail {
-    background-color: rgb(167, 255, 232);
-    height: 22px;
+    background-color: rgb(106, 188, 130); 
+    width: 200px; 
+    height: 45px;
 }
 
 footer {
     width: 100%;
     height: 80px;
-    background-color: #915fd6;
+    background-color: #1D2D44;
     font-size: 30px;
     padding-top: 50px;
     text-align: center;
+    color:aliceblue;
+    font-weight: 300;
+    font-size: 25px;
+    margin-top: 20px;
 }
 
-
-@media (min-width: 768px)
-{
-    .content 
-    {
-        max-width: 960px;
-        margin: 0 auto;
+@media screen and (max-width: 600px) {
+    .table {
+      overflow-y: scroll;
     }
-    .content nav 
-    {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    
-    
-}
+  }
